@@ -1,20 +1,22 @@
 function scrollLoc(event) {
+  event.preventDefault();  // Previne o comportamento padrão do link
+  console.log("evento disparado")
   const elem = event.target;
-  const thisValue = elem.innerHTML;
+  const thisValue = elem.innerHTML.trim();
 
   switch (thisValue) {
-      case 'Sobre':
-          scrollToElement('sobre-davi', 'smooth', 'center');
-          break;
-      case 'Serviços':
-          scrollToElement('servicos', 'smooth', 'center');
-          break;
-      case 'Localização':
-          scrollToElement('localizacao', 'smooth', 'start');
-          break;
-      case 'Início':
-          scrollToElement('inicio', 'smooth', 'start');
-          break;
+    case 'Sobre':
+        document.getElementById('sobre-davi').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        break;
+    case 'Serviços':
+        document.getElementById('servicos').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        break;
+    case 'Localização':
+        document.getElementById('localizacao').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        break;
+    case 'Início':
+        document.getElementById('inicio').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        break;
   }
 }
 
