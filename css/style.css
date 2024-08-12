@@ -620,7 +620,7 @@ img.hover-shadow:hover{
 
   html, body{
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
   }
 
   .grid-main{
@@ -754,7 +754,6 @@ img.hover-shadow:hover{
     overflow: none;
     height: fit-content;
     text-wrap: nowrap;
-    max-width: 100vw;
   }
 
   .loc-div{
@@ -763,7 +762,6 @@ img.hover-shadow:hover{
     width: 100vw;
     margin: 0 .4rem;
   }
- 
 
   .visite{
     font-size: 2rem;
@@ -771,7 +769,6 @@ img.hover-shadow:hover{
 
   .horarios, .telefone, .endereco{
     font-size: .84rem;
-    max-width: 100vw;
     text-wrap: wrap;
   }
 
@@ -798,6 +795,7 @@ img.hover-shadow:hover{
     margin-top: 10px;
     margin-left: -24px;
   }
+  
 h5.endereco{
   margin-left: 6px;
 }
