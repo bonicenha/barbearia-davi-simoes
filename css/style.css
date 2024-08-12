@@ -13,7 +13,7 @@
   }
 
   html, body { 
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
   }
   
 
@@ -127,6 +127,7 @@
   #servicos{
     background-color: black;
     height: 600px;
+    box-sizing: border-box;
   }
 
   #localizacao{
@@ -288,6 +289,7 @@
  /* INICIO GALERIA */
 
  #gallery{
+  position: relative;
   padding: 0;
   margin: 0;
   display: flex;
@@ -489,7 +491,6 @@ img.hover-shadow:hover{
   border: solid  black 1px;
   border-radius: 20px;
   box-shadow: 1px 1px 10px black;
-  
 }
 
 #sobre-davi{
@@ -603,4 +604,91 @@ img.hover-shadow:hover{
   from {background-position: top ;}
   to {background-position: bottom ;}
 }
-/* FIM LOGIN */
+
+.servicos-container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.foto-davi-cel{
+  display: none;
+}
+
+  /* For mobile phones: */
+@media only screen and (max-width: 600px) {
+
+  .grid-main{
+    width: 100vw;
+  }
+
+  .grid-header{
+    width: 100vw;
+  }
+
+ #header>nav{
+    display: none;
+  }
+
+  #logotipo, #logo{
+    position: relative;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .titulo-banner{
+    transform: scale(.3);
+  }
+
+  .banner-foot-text{
+    text-wrap: nowrap;
+    font-size: 1.5rem;
+  }
+  
+  #banner{
+    height: 15rem;
+    background-size: contain;
+    background-position: top;
+  }
+
+  #sobre-davi{
+    height: 45rem;
+    display: block;
+  }
+
+  .foto-davi{
+  display: none;
+  }
+
+  .foto-davi-cel{
+    display: block;
+    height: 40%;
+    width: 40%;
+    float: right;
+    shape-outside: url(../assets/photo.jpg);
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .legenda-davi-text{
+    font-size: 1.1rem;
+    overflow: wrap;
+    flex: 1;
+  }
+
+  .legenda-wrapper{
+  display: flex; /* adiciona display flex ao container */
+  flex-wrap: wrap; /* permite que os elementos sejam dispostos em mais de uma linha */
+  width: 100%; /* define uma largura máxima para o container */
+  }
+
+
+}

@@ -17,7 +17,7 @@
     crossorigin="anonymous"
   />
 </head>
-<body>
+<body style="max-width: 100%;">
   <div class="grid-container">
     <!-- Inicio Header -->
     <div class="grid-header">
@@ -58,15 +58,18 @@
       <section id="sobre-davi">
         <div class="legenda-davi">
           <h2 class="legenda-davi-title">O Davi</h2>
-          <p class="legenda-davi-text">
-            Sou Davi Simões e estou há 10 anos dedicando meu talento e paixão para
-            transformar cortes de cabelo em verdadeiras obras de arte. Adoro o que
-            faço e sempre trago um sorriso no rosto, pronto para bater um bom papo
-            enquanto deixo você com um visual incrível. Minha prioridade é que
-            você se sinta confiante e satisfeito. Venha me conhecer e experimente
-            a diferença que um corte personalizado pode fazer no seu estilo e no
-            seu dia.
-          </p>
+          <div class="legenda-wrapper">
+            <p class="legenda-davi-text">
+              Sou Davi Simões e estou há 10 anos dedicando meu talento e paixão para
+              transformar cortes de cabelo em verdadeiras obras de arte. Adoro o que
+              faço e sempre trago um sorriso no rosto, pronto para bater um bom papo
+              enquanto deixo você com um visual incrível. Minha prioridade é que
+              você se sinta confiante e satisfeito. Venha me conhecer e experimente
+              a diferença que um corte personalizado pode fazer no seu estilo e no
+              seu dia.
+            </p>
+            <img src="assets/photo.jpg" class="foto-davi-cel">
+          </div>
         </div>
   
         <div class="foto-davi" draggable="false"></div>
@@ -80,7 +83,8 @@
         <h1 class="text-white text-center py-5 m-4 aclonica">
           CONHEÇA NOSSOS SERVIÇOS
         </h1>
-        <section class="container">
+        <section class="servicos-container">
+          <!-- div cagada -->
           <div class="row justify-content-center">
             <div class="col-md-4 d-flex flex-column align-items-center mb-4">
               <div
@@ -141,6 +145,8 @@
             </div>
   
           </div>
+          <!-- fim div cagada -->
+
         </section>
       </section>
       <!-- FIM SERVIÇOS -->
