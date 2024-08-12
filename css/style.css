@@ -620,6 +620,7 @@ img.hover-shadow:hover{
 
   body{
     overflow-x: hidden;
+    width: 100vw;
   }
 
   .grid-main{
