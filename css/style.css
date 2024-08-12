@@ -611,7 +611,7 @@ img.hover-shadow:hover{
   position: relative;
 }
 
-.foto-davi-cel{
+.foto-davi-cel, .legenda-davi-cel{
   display: none;
 }
 
@@ -668,27 +668,27 @@ img.hover-shadow:hover{
   display: none;
   }
 
-  .foto-davi-cel{
+  .legenda-davi-cel{
     display: block;
-    height: 40%;
-    width: 40%;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
+
+  .foto-davi-cel{
+    display: inline;
+    height: 200px;
+    width: auto;
     float: right;
-    shape-outside: url(../assets/photo.jpg);
     border-radius: 10px;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
   }
 
   .legenda-davi-text{
-    font-size: 1.1rem;
-    overflow: wrap;
-    flex: 1;
+    display: none;
   }
 
   .legenda-wrapper{
-  display: flex; /* adiciona display flex ao container */
-  flex-wrap: wrap; /* permite que os elementos sejam dispostos em mais de uma linha */
-  width: 100%; /* define uma largura máxima para o container */
+    width: 100vw;
   }
-
 
 }
