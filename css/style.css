@@ -615,7 +615,7 @@ position: relative;
 display: none;
 }
 
-.endereco-text{
+.endereco-text, .telefone-text{
   font-weight: normal;
   font-size: 1.2rem;
 }
@@ -646,7 +646,7 @@ html, body{
 
 #logotipo{
   height: 85px;
-  margin-right: 3.2rem;
+  margin-right: 3.5rem;
 }
 
 .header{
