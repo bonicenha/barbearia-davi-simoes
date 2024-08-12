@@ -618,6 +618,10 @@ img.hover-shadow:hover{
   /* For mobile phones: */
 @media only screen and (max-width: 600px) {
 
+  body{
+    overflow-x: hidden;
+  }
+
   .grid-main{
     width: 100vw;
   }
@@ -669,9 +673,10 @@ img.hover-shadow:hover{
   
   #banner{
     height: 15rem;
-    background-size: contain;
-    background-position: top;
+    background-size: 135%;
   }
+
+
 
   .banner1{
     text-wrap: nowrap;
