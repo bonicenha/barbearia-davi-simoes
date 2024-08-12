@@ -634,6 +634,11 @@ img.hover-shadow:hover{
     position: relative;
   }
 
+  #logotipo{
+    height: 85px;
+    margin-right: 3.2rem;
+  }
+
   .header{
     display: flex;
     flex-direction: column;
@@ -644,13 +649,22 @@ img.hover-shadow:hover{
     padding: 0;
   }
   
-  .titulo-banner{
-    transform: scale(.3);
+  .banner1, .banner2{
+    transform: scale(.4);
+    margin-top: 3rem;
+    margin-left: -5rem;
+  }
+
+  .banner2{
+    margin-top: 2.3rem;
+    margin-left: -2.3rem;
   }
 
   .banner-foot-text{
     text-wrap: nowrap;
     font-size: 1.5rem;
+    margin-bottom: -2rem;
+    margin-right: -3rem;
   }
   
   #banner{
@@ -659,8 +673,12 @@ img.hover-shadow:hover{
     background-position: top;
   }
 
+  .banner1{
+    text-wrap: nowrap;
+  }
+
   #sobre-davi{
-    height: 45rem;
+    height: 37rem;
     display: block;
   }
 
@@ -669,12 +687,14 @@ img.hover-shadow:hover{
   }
 
   .legenda-davi-cel{
+    letter-spacing: .1px;
     display: block;
-    font-size: 1.1rem;
-    margin: 0 1rem;
+    font-size: 1.2rem;
+    margin: 0 1.5rem;
   }
 
   .foto-davi-cel{
+    margin-top: 1rem;
     display: inline;
     height: 200px;
     width: auto;
@@ -689,6 +709,70 @@ img.hover-shadow:hover{
 
   .legenda-wrapper{
     width: 100vw;
+  }
+
+  .legenda-davi-title{
+    margin-left: 80%;
+    text-wrap: nowrap;
+  }
+
+  #header{
+    position: absolute;
+    background: none;
+  }
+
+  #servicos{
+    height: fit-content;
+  }
+
+  #gallery{
+    width: 100vw;
+  }
+
+  .hover-shadow{
+    height: 120px;
+  }
+
+  .hover-shadow:hover{
+    height: 200px;
+  }
+
+  .grid-footer{
+    height: fit-content;
+  }
+
+  #localizacao{
+    overflow: none;
+    height: fit-content;
+    text-wrap: nowrap;
+  }
+
+  .loc-div{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 .4rem;
+  }
+ 
+
+  .visite{
+    font-size: 2rem;
+  }
+
+  .horarios, .telefone, .endereco{
+    font-size: .9rem;
+  }
+
+  .telefone{
+    margin-top: .5rem;
+  }
+
+  .endereco{
+    text-wrap: wrap;
+  }
+  
+  h5.endereco{
+    margin-left: .4rem;
   }
 
 }
