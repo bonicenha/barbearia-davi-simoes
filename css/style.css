@@ -771,7 +771,9 @@ img.hover-shadow:hover{
     font-size: .84rem;
   }
 
-
+  .horariostext{
+    max-width: 100vw;
+}
 
   .telefone{
     margin-top: .5rem;
