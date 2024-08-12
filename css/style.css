@@ -615,6 +615,11 @@ position: relative;
 display: none;
 }
 
+.endereco-text{
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 630px) {
 
