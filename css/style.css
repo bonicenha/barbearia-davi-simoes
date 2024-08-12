@@ -620,6 +620,11 @@ display: none;
   font-size: 1.2rem;
 }
 
+.horariostext{
+  font-weight: normal;
+  text-wrap: wrap;
+}
+
 /* For mobile phones: */
 @media only screen and (max-width: 630px) {
 
@@ -785,10 +790,7 @@ display: none;
   padding-bottom: 1rem;
 }
 
-.horariostext{
-  font-weight: normal;
-  text-wrap: wrap;
-}
+
 
 .telefone{
   margin-top: .5rem;
