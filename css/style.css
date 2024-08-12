@@ -782,15 +782,17 @@ display: none;
 
 .horarios{
   width: 300px;
-  box-sizing: border-box;
+  padding-bottom: 1rem;
 }
 
 .horariostext{
+  font-weight: normal;
   text-wrap: wrap;
 }
 
 .telefone{
   margin-top: .5rem;
+  padding-bottom: 1rem;
 }
 
 
