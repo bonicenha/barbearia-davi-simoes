@@ -618,9 +618,9 @@ img.hover-shadow:hover{
   /* For mobile phones: */
 @media only screen and (max-width: 600px) {
 
-  body{
+  html, body{
     overflow-x: hidden;
-    width: 100;
+    width: 100%;
   }
 
   .grid-main{
@@ -674,7 +674,7 @@ img.hover-shadow:hover{
   
   #banner{
     height: 15rem;
-    background-size: 140%;
+    background-size: 150%;
   }
 
 
@@ -684,7 +684,8 @@ img.hover-shadow:hover{
   }
 
   #sobre-davi{
-    height: 39rem;
+    padding-bottom: 2rem;
+    height: fit-content;
     display: block;
   }
 
@@ -693,7 +694,8 @@ img.hover-shadow:hover{
   }
 
   .legenda-davi-cel{
-    letter-spacing: .1px;
+    font-family: Poppins;
+    font-size: .9rem;
     display: block;
     font-size: 1.2rem;
     margin: 0 1.5rem;
@@ -702,7 +704,7 @@ img.hover-shadow:hover{
   .foto-davi-cel{
     margin-top: 1rem;
     display: inline;
-    height: 240px;
+    height: 235px;
     width: auto;
     float: right;
     border-radius: 10px;
@@ -766,8 +768,10 @@ img.hover-shadow:hover{
   }
 
   .horarios, .telefone, .endereco{
-    font-size: .9rem;
+    font-size: .84rem;
   }
+
+
 
   .telefone{
     margin-top: .5rem;
