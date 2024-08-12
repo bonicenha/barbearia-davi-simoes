@@ -754,6 +754,7 @@ img.hover-shadow:hover{
     overflow: none;
     height: fit-content;
     text-wrap: nowrap;
+    max-width: 100vw;
   }
 
   .loc-div{
@@ -797,4 +798,7 @@ img.hover-shadow:hover{
     margin-top: 10px;
     margin-left: -24px;
   }
+h5.endereco{
+  margin-left: 6px;
+}
 }
