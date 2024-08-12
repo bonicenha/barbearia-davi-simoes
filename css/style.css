@@ -1,417 +1,74 @@
 :root {
-    --primaria: #3d3690;
-    --secundaria: #0e32c2;
-    --cor1: #0B0C0D;
-    --cor2: #454648;
-    --cor3: #828384;
-    --cor4: #b8b8b8;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 1024px;
-    --breakpoint-xl: 1399px;
-  }
+  --primaria: #3d3690;
+  --secundaria: #0e32c2;
+  --cor1: #0B0C0D;
+  --cor2: #454648;
+  --cor3: #828384;
+  --cor4: #b8b8b8;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1399px;
+}
 
-  html, body { 
-    scroll-behavior: smooth;
-  }
-  
-
-  .grid-main{
-    background-color: black;
-  }
-
-  .grid-container{
-    display: grid;
-    grid-template-areas: 
-    "grid-header"
-    "grid-main"
-    "grid-footer";
-    grid-template-rows: 0fr 1fr 0fr;
-    min-height: 100vh;
-  }
-
-  .grid-header{
-    grid-area: grid-header;
-  }
-
-  .grid-main{
-    grid-area: grid-main;
-  }
-
-  .grid-footer{
-    grid-area: grid-footer;
-  }
-
-  .footer{
-    width: 100%;
-    height: 80px;
-    background-color: var(--cor1);
-  }
-
-  .header{
-    top: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
-    width: 100%;
-    height: 120px;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo{
-    position: absolute;
-    left: 2.5rem;
-    padding-top: 0.2rem;
-  }
-
-  #logotipo:hover{
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15);
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-  }
-  
-  
-  .header ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  }
-
-  .header li{
-    padding-right: 2rem;
-    cursor: pointer;
-    user-select: none;
-    color: white;
-    font-family: Teko;
-    font-size: 2rem;
-  }
-  
-  .header a{
-    line-height: 95px;
-    display: inline-block;
-    position: relative;
-  }
-
-  .header nav{
-    height: 95px;
-  }
+html, body { 
+  scroll-behavior: smooth;
+}
 
 
-  .header li:hover{
-    transition: 0.25s;
-    color: rgb(160, 160, 160);
-    font-size: 2.3rem;
-  }
+.grid-main{
+  background-color: black;
+}
 
-  #banner{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    background-size: cover;
-  }
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "grid-header"
+  "grid-main"
+  "grid-footer";
+  grid-template-rows: 0fr 1fr 0fr;
+  min-height: 100vh;
+}
 
-  .parallax{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("../assets/bg.png");
-  }
+.grid-header{
+  grid-area: grid-header;
+}
 
-  #servicos{
-    background-color: black;
-    height: 600px;
-    box-sizing: border-box;
-  }
+.grid-main{
+  grid-area: grid-main;
+}
 
-  #localizacao{
-    background-color: black;
-  }
+.grid-footer{
+  grid-area: grid-footer;
+}
 
-  .whatsapp-button{
-    z-index: 10;
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-
-  }
-
-  .whatsapp{
-    cursor: pointer;
-    background-image: url(../assets/whatsapp.png);
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
-    border: none;
-    height: 55px;
-    width: 55px;
-    border-radius: 100%;
-    transition: 0.7s;
-    background-color: rgb(240, 240, 240);
-    animation: pulse 2s infinite;
-    visibility: visible;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .whatsapp:hover{
-    transition: 0.7s;
-    background-color: #25D366;
-  }
-
-  .zapzap:focus{
-    outline: none;
-  }
-
-  .footer {
-    position: relative;
-    width: 100%;
-    background: rgb(38, 38, 38);
-    min-height: 110px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .footer p {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
-  }
-
-  .whatsapp-tooltip {
-    visibility: hidden;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .whatsapp-tooltip:hover{
-    visibility: visible;
-    z-index: 1;
-  }
-
-  .tooltip-text{
-    font-family: poppins;
-    margin-right: 15px;
-    margin-top: 13px;
-    color: black;
-    background-color: white;
-    height: 26px;
-    width: 180px;
-    border-radius: 9px;
-    padding-left: 4px;
-  }
-
-  .tooltip-text::after{
-  content: "";
-  position: absolute;
-  margin-top: 6px;
-  margin-left: 7px;
-  border-width: 7px;
-  border-style: solid;
-  border-color: transparent transparent transparent white;
-  }
-
-  .footer li{
-    list-style: none;
-  }
-
- .aclonica{
-  font-family: Aclonica;
- }
-
- .border-branca{
-  margin: 0;
-  border: 2px white solid;
- }
-
- .border-branca2{
-  margin: 0;
-  border: 1px white solid;
- }
-
- .no-select{
-  user-select: none;
- }
-
- .footer-caption{
-  margin-top: 20px;
-  font-size: 1.5rem;
-  font-family: teko;
- }
-
- .footer-icons-container{
-  display: flex;
-  justify-content: center;
+.footer{
   width: 100%;
+  height: 80px;
+  background-color: var(--cor1);
 }
 
- .footer-icons-div{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: flex;
-  align-items: center;
-  color: white;
- }
-
- .footer-icons{
-  padding: 0;
+.header{
+  top: 0;
   margin: 0;
-  margin-top: 1rem;
-  justify-content: center;
-  height: 25px;
-  margin-right: 5px;
-}
-
-.footer-icons-div:hover{
-  color: var(--cor4);
-  text-decoration: none;
- }
-
- /* INICIO GALERIA */
-
- #gallery{
-  position: relative;
   padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  background-image: url(../assets/gallery/fundo.png);
-  background-attachment: fixed;
-  background-repeat: repeat;
-  animation: moveIt 11s linear infinite;
- }
-
- @keyframes moveIt {
-  from {background-position: top left;}
-  to {background-position: bottom right;}
-}
-
-
-/* The Modal (background) */
-.meu-modal {
-  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 120px;
   position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Modal Content */
-.modal-conteudo {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-/* The Close Button */
-.fechar-modal {
-  color: white;
+.logo{
   position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+  left: 2.5rem;
+  padding-top: 0.2rem;
 }
 
-.fechar-modal:hover,
-.close:focus {
-  color: var(--cor3);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.meuSlide {
-  display: none;
-}
-
-.meuSlide img{
-  left: 50%;
-  right: 50%;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-img.hover-shadow:hover{
+#logotipo:hover{
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -o-transform: scale(1.15);
@@ -420,383 +77,735 @@ img.hover-shadow:hover{
   -webkit-transition: all 0.3s;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.header ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
 
- /* FIM GALERIA */
+.header li{
+  padding-right: 2rem;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  font-family: Teko;
+  font-size: 2rem;
+}
+
+.header a{
+  line-height: 95px;
+  display: inline-block;
+  position: relative;
+}
+
+.header nav{
+  height: 95px;
+}
+
+
+.header li:hover{
+  transition: 0.25s;
+  color: rgb(160, 160, 160);
+  font-size: 2.3rem;
+}
+
+#banner{
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+
+.parallax{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../assets/bg.png");
+}
+
+#servicos{
+  background-color: black;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+#localizacao{
+  background-color: black;
+}
+
+.whatsapp-button{
+  z-index: 10;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+
+}
+
+.whatsapp{
+  cursor: pointer;
+  background-image: url(../assets/whatsapp.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  border: none;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  transition: 0.7s;
+  background-color: rgb(240, 240, 240);
+  animation: pulse 2s infinite;
+  visibility: visible;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.whatsapp:hover{
+  transition: 0.7s;
+  background-color: #25D366;
+}
+
+.zapzap:focus{
+  outline: none;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: rgb(38, 38, 38);
+  min-height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.whatsapp-tooltip {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.whatsapp-tooltip:hover{
+  visibility: visible;
+  z-index: 1;
+}
+
+.tooltip-text{
+  font-family: poppins;
+  margin-right: 15px;
+  margin-top: 13px;
+  color: black;
+  background-color: white;
+  height: 26px;
+  width: 180px;
+  border-radius: 9px;
+  padding-left: 4px;
+}
+
+.tooltip-text::after{
+content: "";
+position: absolute;
+margin-top: 6px;
+margin-left: 7px;
+border-width: 7px;
+border-style: solid;
+border-color: transparent transparent transparent white;
+}
+
+.footer li{
+  list-style: none;
+}
+
+.aclonica{
+font-family: Aclonica;
+}
+
+.border-branca{
+margin: 0;
+border: 2px white solid;
+}
+
+.border-branca2{
+margin: 0;
+border: 1px white solid;
+}
+
+.no-select{
+user-select: none;
+}
+
+.footer-caption{
+margin-top: 20px;
+font-size: 1.5rem;
+font-family: teko;
+}
+
+.footer-icons-container{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.footer-icons-div{
+margin-left: 1rem;
+margin-right: 1rem;
+display: flex;
+align-items: center;
+color: white;
+}
+
+.footer-icons{
+padding: 0;
+margin: 0;
+margin-top: 1rem;
+justify-content: center;
+height: 25px;
+margin-right: 5px;
+}
+
+.footer-icons-div:hover{
+color: var(--cor4);
+text-decoration: none;
+}
+
+/* INICIO GALERIA */
+
+#gallery{
+position: relative;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+background-image: url(../assets/gallery/fundo.png);
+background-attachment: fixed;
+background-repeat: repeat;
+animation: moveIt 11s linear infinite;
+}
+
+@keyframes moveIt {
+from {background-position: top left;}
+to {background-position: bottom right;}
+}
+
+
+/* The Modal (background) */
+.meu-modal {
+display: none;
+position: fixed;
+z-index: 100;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-conteudo {
+position: relative;
+margin: 0;
+padding: 0;
+width: 90%;
+max-width: 1200px;
+display: flex;
+justify-content: center;
+}
+
+/* The Close Button */
+.fechar-modal {
+color: white;
+position: absolute;
+top: 10px;
+right: 25px;
+font-size: 35px;
+font-weight: bold;
+}
+
+.fechar-modal:hover,
+.close:focus {
+color: var(--cor3);
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Hide the slides by default */
+.meuSlide {
+display: none;
+}
+
+.meuSlide img{
+left: 50%;
+right: 50%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+img.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+img.hover-shadow {
+transition: 0.3s;
+}
+
+img.hover-shadow:hover{
+-webkit-transform: scale(1.15);
+-moz-transform: scale(1.15);
+-o-transform: scale(1.15);
+transform: scale(1.15);
+transition: all 0.3s;
+-webkit-transition: all 0.3s;
+}
+
+.hover-shadow:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* FIM GALERIA */
 
 .allura{
-  font-family: allura;
+font-family: allura;
 }
 
 .teko{
-  font-family: teko;
+font-family: teko;
 }
 
 .banner1{
-  justify-self: center;
-  text-shadow: 2px 2px 10px black;
-  z-index: 2;
-  color: rgb(182, 182, 182);
-  font-weight: bold;
-  font-size: 6.2rem;
-  position: absolute;
-  padding-right: 200px;
+justify-self: center;
+text-shadow: 2px 2px 10px black;
+z-index: 2;
+color: rgb(182, 182, 182);
+font-weight: bold;
+font-size: 6.2rem;
+position: absolute;
+padding-right: 200px;
 }
 
 .banner2{
-  text-shadow: 5px 5px #000000;
-  z-index: 1;
-  position: absolute;
-  padding-top: 59px;
-  padding-left: 290px;
-  color: white;
-  font-weight: bold;
-  font-size: 5rem;
+text-shadow: 5px 5px #000000;
+z-index: 1;
+position: absolute;
+padding-top: 59px;
+padding-left: 290px;
+color: white;
+font-weight: bold;
+font-size: 5rem;
 }
 
 .titulo-banner{
-  padding-bottom: 200px;
-  padding-right: 130px;
-  align-self: center;
+padding-bottom: 200px;
+padding-right: 130px;
+align-self: center;
 }
 
 .banner-foot-text{
-  text-shadow: 3px 3px 5px #000000;
-  font-weight: bold;
-  color: #ffbf00;
-  font-size: 3.5rem;
-  animation: pulse 2s infinite;
+text-shadow: 3px 3px 5px #000000;
+font-weight: bold;
+color: #ffbf00;
+font-size: 3.5rem;
+animation: pulse 2s infinite;
 }
 
 .banner-foot{
-  padding-right: 10rem;
-  align-self: end;
+padding-right: 10rem;
+align-self: end;
 }
 
 
 .o-davi{
-  display: flex;
+display: flex;
 }
 
 .foto-davi{
-  block-size: auto;
-  height: 460px;
-  width: 320px;
-  background-image: url(../assets/photo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: solid  black 1px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px black;
+block-size: auto;
+height: 460px;
+width: 320px;
+background-image: url(../assets/photo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border: solid  black 1px;
+border-radius: 20px;
+box-shadow: 1px 1px 10px black;
 }
 
 #sobre-davi{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: white;
-  height: 550px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: white;
+height: 550px;
 }
 
 .legenda-davi{
-  width: 40%;
+width: 40%;
 }
 
 .legenda-davi-title{
-  font-family: Teko;
-  color: var(--cor2);
-  font-weight: bold;
-  font-size: 5rem;
+font-family: Teko;
+color: var(--cor2);
+font-weight: bold;
+font-size: 5rem;
 }
 
 .legenda-davi-text{
-  color: black;
-  font-size:1.2rem ;
+color: black;
+font-size:1.2rem ;
 }
 
 
 /* LOGIN */
 
 #effect-sides{
-  display: flex;
+display: flex;
 }
 
 #login-page{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: black;
+height: 100vh;
+width: 100vw;
 }
 
 .login-logo{
-  padding-right: 40vw;
-  padding-top: 3rem;
+padding-right: 40vw;
+padding-top: 3rem;
 }
 
 .login-form{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 30%;
+display: flex;
+justify-content: center;
+position: absolute;
+bottom: 30%;
 }
 
 #botao-login{
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 #botao-login button{
-  border: none;
-  border-radius: 5px;
-  font-family: teko;
-  font-size: 1.4rem;
+border: none;
+border-radius: 5px;
+font-family: teko;
+font-size: 1.4rem;
 }
 
 .input-login{
-  padding: 5px;
-  margin: 5px;
-  width: 200px;
-  border-radius: 5px;
-  border: none;
-  font-family: teko;
-  font-size: 1.3rem;
+padding: 5px;
+margin: 5px;
+width: 200px;
+border-radius: 5px;
+border: none;
+font-family: teko;
+font-size: 1.3rem;
 }
 
 .input-login:focus{
 
-  outline: none;
+outline: none;
 }
 
 .effect-sides{
-  display: flex;
+display: flex;
 }
 
 .login-left{
-  position: absolute;
-  left: 0;
-  width: 80px;
-  height: 100vh;
-  background-image: url(../assets/gallery/fundo.png);
-  background-color: white;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  animation: moveIt2 10s linear infinite;
+position: absolute;
+left: 0;
+width: 80px;
+height: 100vh;
+background-image: url(../assets/gallery/fundo.png);
+background-color: white;
+background-attachment: fixed;
+background-repeat: repeat;
+animation: moveIt2 10s linear infinite;
 }
 
 .login-right{
-  position: absolute;
-  right: 0;
-  width: 80px;
-  height: 100vh;
-  background-image: url(../assets/gallery/fundo.png);
-  background-color: white;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  animation: moveIt2 10s linear infinite;
+position: absolute;
+right: 0;
+width: 80px;
+height: 100vh;
+background-image: url(../assets/gallery/fundo.png);
+background-color: white;
+background-attachment: fixed;
+background-repeat: repeat;
+animation: moveIt2 10s linear infinite;
 }
 
 @keyframes moveIt2 {
-  from {background-position: top ;}
-  to {background-position: bottom ;}
+from {background-position: top ;}
+to {background-position: bottom ;}
 }
 
 .servicos-container{
-  display: flex;
-  justify-content: center;
-  position: relative;
+display: flex;
+justify-content: center;
+position: relative;
 }
 
 .foto-davi-cel, .legenda-davi-cel{
-  display: none;
+display: none;
 }
 
-  /* For mobile phones: */
+/* For mobile phones: */
 @media only screen and (max-width: 630px) {
 
-  html, body{
-    overflow-x: hidden;
-    width: 100vw;
-  }
+html, body{
+  overflow-x: hidden;
+  width: 100%;
+}
 
-  .grid-main{
-    width: 100vw;
-  }
+.grid-main{
+  width: 100vw;
+}
 
-  .grid-header{
-    width: 100vw;
-  }
+.grid-header{
+  width: 100vw;
+}
 
- #header>nav{
-    display: none;
-  }
-
-  #logotipo, #logo{
-    position: relative;
-  }
-
-  #logotipo{
-    height: 85px;
-    margin-right: 3.2rem;
-  }
-
-  .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: 7rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .banner1, .banner2{
-    transform: scale(.4);
-    margin-top: 3rem;
-    margin-left: -5rem;
-  }
-
-  .banner2{
-    margin-top: 2.3rem;
-    margin-left: -2.3rem;
-  }
-
-  .banner-foot-text{
-    text-wrap: nowrap;
-    font-size: 1.5rem;
-    margin-bottom: -2rem;
-    margin-right: -3rem;
-  }
-  
-  #banner{
-    height: 15rem;
-    background-size: 160%;
-  }
-
-
-
-  .banner1{
-    text-wrap: nowrap;
-  }
-
-  #sobre-davi{
-    padding-bottom: 2rem;
-    height: fit-content;
-    display: block;
-  }
-
-  .foto-davi{
+#header>nav{
   display: none;
-  }
-
-  .legenda-davi-cel{
-    font-family: Poppins;
-    font-size: .9rem;
-    display: block;
-    font-size: 1.2rem;
-    margin: 0 1.5rem;
-  }
-
-  .foto-davi-cel{
-    margin-right: -.9rem;
-    display: inline;
-    height: 235px;
-    width: auto;
-    float: right;
-    border-radius: 10px;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
-    margin-left: 2px;
-  }
-
-  .legenda-davi-text{
-    display: none;
-  }
-
-  .legenda-wrapper{
-    width: 100vw;
-  }
-
-  .legenda-davi-title{
-    margin-left: 80%;
-    text-wrap: nowrap;
-  }
-
-  #header{
-    position: absolute;
-    background: none;
-  }
-
-  #servicos{
-    height: fit-content;
-  }
-
-  #gallery{
-    width: 100vw;
-  }
-
-  .hover-shadow{
-    height: 120px;
-  }
-
-  .hover-shadow:hover{
-    height: 200px;
-  }
-
-  .grid-footer{
-    height: fit-content;
-  }
-
-  #localizacao{
-    overflow: none;
-    height: fit-content;
-    text-wrap: nowrap;
-  }
-
-  .loc-div{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin: 0 .4rem;
-  }
-
-  .visite{
-    font-size: 2rem;
-  }
-
-  .horarios, .telefone, .endereco{
-    font-size: .84rem;
-    text-wrap: wrap;
-  }
-
-  .horarios{
-    width: 300px;
-    box-sizing: border-box;
-  }
-
-  .horariostext{
-    text-wrap: wrap;
 }
 
-  .telefone{
-    margin-top: .5rem;
-  }
-
-
-  .copyright{
-    margin-left: 30px;
-    margin-bottom: 30px;
-  }
-
-  .footer-icons-container{
-    margin-top: 10px;
-    margin-left: -24px;
-  }
-  
-h5.endereco{
-  margin-left: 6px;
+#logotipo, #logo{
+  position: relative;
 }
+
+#logotipo{
+  height: 85px;
+  margin-right: 3.2rem;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.banner1, .banner2{
+  transform: scale(.4);
+  margin-top: 3rem;
+  margin-left: -5rem;
+}
+
+.banner2{
+  margin-top: 2.3rem;
+  margin-left: -2.3rem;
+}
+
+.banner-foot-text{
+  text-wrap: nowrap;
+  font-size: 1.5rem;
+  margin-bottom: -2rem;
+  margin-right: -3rem;
+}
+
+#banner{
+  height: 15rem;
+  background-size: 160%;
+}
+
+
+
+.banner1{
+  text-wrap: nowrap;
+}
+
+#sobre-davi{
+  padding-bottom: 2rem;
+  height: fit-content;
+  display: block;
+}
+
+.foto-davi{
+display: none;
+}
+
+.legenda-davi-cel{
+  font-family: Poppins;
+  font-size: .9rem;
+  display: block;
+  font-size: 1.2rem;
+  margin: 0 1.5rem;
+}
+
+.foto-davi-cel{
+  margin-right: -.9rem;
+  display: inline;
+  height: 235px;
+  width: auto;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+  margin-left: 2px;
+}
+
+.legenda-davi-text{
+  display: none;
+}
+
+.legenda-wrapper{
+  width: 100vw;
+}
+
+.legenda-davi-title{
+  margin-left: 80%;
+  text-wrap: nowrap;
+}
+
+#header{
+  position: absolute;
+  background: none;
+}
+
+#servicos{
+  height: fit-content;
+}
+
+#gallery{
+  width: 100vw;
+}
+
+.hover-shadow{
+  height: 120px;
+}
+
+.hover-shadow:hover{
+  height: 200px;
+}
+
+.grid-footer{
+  height: fit-content;
+}
+
+#localizacao{
+  overflow: none;
+  height: fit-content;
+  text-wrap: nowrap;
+  max-width: 100vw;
+}
+
+.loc-div{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0 .4rem;
+}
+
+
+.visite{
+  font-size: 2rem;
+}
+
+.horarios, .telefone, .endereco{
+  font-size: .84rem;
+  max-width: 100vw;
+  text-wrap: wrap;
+}
+
+.horarios{
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.horariostext{
+  text-wrap: wrap;
+}
+
+.telefone{
+  margin-top: .5rem;
+}
+
+
+.copyright{
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-icons-container{
+  margin-top: 10px;
+  margin-left: -24px;
+}
+
+.div-enderecos{
+  margin-left: 6.4px;
+}
+
+p.horarios{
+margin-top: 1rem;
+margin-left: -10px;
+}
+
 }
