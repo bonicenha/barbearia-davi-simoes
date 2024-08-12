@@ -620,7 +620,7 @@ img.hover-shadow:hover{
 
   body{
     overflow-x: hidden;
-    width: 100vw;
+    width: 100;
   }
 
   .grid-main{
@@ -684,7 +684,7 @@ img.hover-shadow:hover{
   }
 
   #sobre-davi{
-    height: 37rem;
+    height: 39rem;
     display: block;
   }
 
@@ -702,7 +702,7 @@ img.hover-shadow:hover{
   .foto-davi-cel{
     margin-top: 1rem;
     display: inline;
-    height: 200px;
+    height: 240px;
     width: auto;
     float: right;
     border-radius: 10px;
